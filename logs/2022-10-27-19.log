@@ -1,0 +1,3 @@
+{"level":"error","message":"2022-10-27T12:25:09.610Z - 500 - Forbidden - Cannot set headers after they are sent to the client - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T12:25:14.761Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"error","message":"2022-10-27T12:31:00.568Z - 500 - Forbidden - Cannot set headers after they are sent to the client - /api/films - GET - ::1 - req.body: {}"}

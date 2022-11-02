@@ -1,0 +1,22 @@
+{"level":"error","message":"2022-10-27T08:35:45.162Z - 500 - Internal Server Error - The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined - /api/auth - POST - ::1 - req.body: {\"username\":\"Admin\",\"password\":\"Py123456\"}"}
+{"level":"info","message":"2022-10-27T08:36:49.912Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"error","message":"2022-10-27T08:37:51.978Z - 500 - Internal Server Error - The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:38:04.325Z - OK - /api/films - GET - ::ffff:127.0.0.1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:38:12.331Z - Not Modified - /api/films - GET - ::ffff:127.0.0.1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:38:17.528Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"error","message":"2022-10-27T08:38:26.848Z - 500 - Forbidden - Cannot set headers after they are sent to the client - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:38:47.473Z - OK - /api/films - GET - ::ffff:127.0.0.1 - req.body: {}"}
+{"level":"error","message":"2022-10-27T08:39:20.395Z - 500 - Internal Server Error - The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:39:48.131Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:39:52.198Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:43:08.987Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:43:24.558Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:48:33.731Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:49:36.556Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:50:36.049Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:50:37.349Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:50:39.566Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:54:08.833Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:56:36.334Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:57:32.277Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T08:59:25.737Z - OK - /api/films - GET - ::1 - req.body: {}"}

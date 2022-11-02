@@ -1,0 +1,14 @@
+{"level":"info","message":"2022-10-27T11:25:47.731Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:26:22.184Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:26:23.887Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:26:26.747Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:27:00.018Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:27:02.131Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:28:07.356Z - OK - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:28:09.658Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:28:18.397Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:28:37.058Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:28:39.525Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:28:41.380Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:29:55.252Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-10-27T11:29:56.446Z - Not Modified - /api/films - GET - ::1 - req.body: {}"}

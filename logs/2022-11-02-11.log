@@ -1,0 +1,6 @@
+{"level":"info","message":"2022-11-02T04:16:49.647Z - Not Found - /api/actor - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-11-02T04:16:49.854Z - Not Found - /favicon.ico - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-11-02T04:16:55.107Z - OK - /api/actors - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-11-02T04:27:22.852Z - Not Found - /api/actor - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-11-02T04:54:23.581Z - Created - /api/actors - POST - ::1 - req.body: {\"first_name\":\"Py\",\"last_name\":\"HCMUS\"}"}
+{"level":"info","message":"2022-11-02T04:54:32.838Z - Created - /api/actors - POST - ::1 - req.body: {\"first_name\":\"Py\",\"last_name\":\"HCMUS\"}"}
