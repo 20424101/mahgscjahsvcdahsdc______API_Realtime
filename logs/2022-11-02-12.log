@@ -1,0 +1,6 @@
+{"level":"info","message":"2022-11-02T05:16:06.132Z - Created - /api/actors - POST - ::1 - req.body: {\"first_name\":\"Py\",\"last_name\":\"HCMUS++\"}"}
+{"level":"info","message":"2022-11-02T05:27:11.060Z - Created - /api/actors - POST - ::1 - req.body: {\"first_name\":\"Py\",\"last_name\":\"20424101\"}"}
+{"level":"info","message":"2022-11-02T05:27:18.614Z - Created - /api/actors - POST - ::1 - req.body: {\"first_name\":\"Py\",\"last_name\":\"20424101++\"}"}
+{"level":"info","message":"2022-11-02T05:27:24.080Z - Created - /api/actors - POST - ::1 - req.body: {\"first_name\":\"Py\",\"last_name\":\"20424101++\"}"}
+{"level":"info","message":"2022-11-02T05:27:41.243Z - Created - /api/actors - POST - ::1 - req.body: {\"first_name\":\"Py\",\"last_name\":\"20424101--\"}"}
+{"level":"info","message":"2022-11-02T05:28:53.285Z - Not Found - /phpmyadmin - GET - ::1 - req.body: {}"}

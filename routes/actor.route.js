@@ -10,7 +10,7 @@ import moment from 'moment';
 
 const router = express.Router();
 
-router.get('/', async function (req, res) {
+router.get('/short_polling', async function (req, res) {
     const ts = req.query.ts || 0;
 
     const list = await actorModel.find(ts);
@@ -18,6 +18,36 @@ router.get('/', async function (req, res) {
       ts: moment().unix(),
       list
     });
+})
+
+router.get('/long_polling', async function (req, res) {
+  const ts = req.query.ts || 0;
+
+  let loop = 0;
+  const f = async function(){
+    const list = await actorModel.find(ts);
+    if(list.length > 0){
+      res.json({
+        ts: moment().unix(),
+        list
+      });
+    }
+    else{
+      loop++;
+      console.log(`loop: ${loop}`);
+      if(loop < 4){
+        setTimeout(f, 3000);
+      }
+      else{
+        res.json({
+          ts: moment().unix(),
+          list: []
+        });
+      }
+    }
+  }
+
+  await f();
 })
 
 router.get('/:id', async function (req, res) {
