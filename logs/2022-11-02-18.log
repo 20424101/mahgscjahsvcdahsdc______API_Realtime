@@ -1,0 +1,4 @@
+{"level":"info","message":"2022-11-02T11:29:19.000Z - Not Found - /api/actors - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-11-02T11:29:19.243Z - Not Found - /favicon.ico - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-11-02T11:29:26.704Z - Not Found - /api/actor - GET - ::1 - req.body: {}"}
+{"level":"info","message":"2022-11-02T11:29:31.885Z - Not Found - /api/actors - GET - ::1 - req.body: {}"}

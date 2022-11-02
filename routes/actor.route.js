@@ -7,6 +7,7 @@ stackify.start({apiKey: '0Ka5Gv6Mj6Wc4Oa6Dz2Rn9Mj5Qd7Fn7Rf1Ue9Sv', appName: 'Nod
 
 import actorModel from '../models/actor.model.js';
 import moment from 'moment';
+import { broadcastAll } from '../ws.js';
 
 const router = express.Router();
 
@@ -50,6 +51,13 @@ router.get('/long_polling', async function (req, res) {
   await f();
 })
 
+//---------------------------------------------------------
+router.get('/', async function (req, res) {
+
+  const list = await actorModel.findAll();
+  res.json(list);
+})
+
 router.get('/:id', async function (req, res) {
   
   try {
@@ -70,21 +78,14 @@ router.get('/:id', async function (req, res) {
 
 router.post('/', async function (req, res) {
   
-  try {
-    let film = req.body;
-    const ret = await actorModel.add(film);
-    film = {
-      film_id: ret[0],
-      ...film
+    let actor = req.body;
+    const ret = await actorModel.add(actor);
+    actor = {
+      actor_id: ret[0],
+      ...actor
     }
-    res.status(201).json(film);
-    logInfo(req, res);
-    stackifyInfo(req, res);
-
-  } catch (error) {
-    logError(error, req, res);
-    stackifyError(error, req, res);
-  }
+    broadcastAll(JSON.stringify(actor));
+    res.status(201).json(actor);
 })
 
 router.delete('/:id', async function (req, res) {
@@ -126,6 +127,25 @@ router.patch('/:id', async function (req, res) {
 //   try {
 //     const list = await actorModel.findAll();
 //     res.json(list);
+//     logInfo(req, res);
+//     stackifyInfo(req, res);
+
+//   } catch (error) {
+//     logError(error, req, res);
+//     stackifyError(error, req, res);
+//   }
+// })
+
+// router.post('/', async function (req, res) {
+  
+//   try {
+//     let film = req.body;
+//     const ret = await actorModel.add(film);
+//     film = {
+//       film_id: ret[0],
+//       ...film
+//     }
+//     res.status(201).json(film);
 //     logInfo(req, res);
 //     stackifyInfo(req, res);
 

@@ -5,6 +5,9 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
 
+//WS
+import socketServer from './ws.js';
+
 //API SECURITY
 import secretKeyAuth from './middlewares/secretKeyAuth.mdw.js';
 import basicAuth from './middlewares/basicAuth.mdw.js';
