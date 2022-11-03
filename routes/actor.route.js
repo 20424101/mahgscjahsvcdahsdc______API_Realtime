@@ -8,6 +8,8 @@ stackify.start({apiKey: '0Ka5Gv6Mj6Wc4Oa6Dz2Rn9Mj5Qd7Fn7Rf1Ue9Sv', appName: 'Nod
 import actorModel from '../models/actor.model.js';
 import moment from 'moment';
 import { broadcastAll } from '../ws.js';
+import sse from '../sse.js';
+
 
 const router = express.Router();
 
@@ -85,6 +87,9 @@ router.post('/', async function (req, res) {
       ...actor
     }
     broadcastAll(JSON.stringify(actor));
+    // const _notif = createNotification(JSON.stringify(actor));
+    // sse.send(JSON.stringify(_notif), 'data');
+    sse.send(actor, "post_reaction");
     res.status(201).json(actor);
 })
 

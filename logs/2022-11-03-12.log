@@ -1,0 +1,1 @@
+{"level":"error","message":"2022-11-03T05:24:40.863Z - 500 - Internal Server Error - Cannot read properties of undefined (reading 'socket') - /stream - GET - ::1 - req.body: {}"}

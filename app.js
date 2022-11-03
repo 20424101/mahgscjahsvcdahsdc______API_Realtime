@@ -7,6 +7,8 @@ dotenv.config();
 
 //WS
 import socketServer from './ws.js';
+//SSE
+import sseRoute from './routes/sse.route.js';
 
 //API SECURITY
 import secretKeyAuth from './middlewares/secretKeyAuth.mdw.js';
@@ -26,6 +28,10 @@ stackify.start({apiKey: '0Ka5Gv6Mj6Wc4Oa6Dz2Rn9Mj5Qd7Fn7Rf1Ue9Sv', appName: 'Nod
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());
+//Using SSE
+app.use(sseRoute);
+
+
 
 //BASIC AUTHENTICATION
 // app.use(basicAuth);
@@ -37,8 +43,6 @@ app.use(cors());
 // app.use(accessToken_refeshToken);
 // app.use('/api/auth', authRouter);
 //----------------------------------
-
-
 
 app.get('/', function (req, res) {
   res.json({
